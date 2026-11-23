@@ -1,0 +1,70 @@
+.demo-login {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e8eff3;
+}
+
+.demo-login h3 {
+  margin: 0 0 12px;
+  color: #284858;
+  font-size: 13px;
+}
+
+.demo-login-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.demo-login-buttons .btn {
+  justify-content: flex-start;
+  min-width: 0;
+  text-align: left;
+}
+
+.demo-login p {
+  margin: 10px 0 0;
+  color: #81939d;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 420px) {
+  .demo-login-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.demo-preview-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 1px solid #cce8e2;
+  border-radius: 12px;
+  background: #eaf8f4;
+  color: #426d6b;
+  font-size: 12px;
+}
+
+.demo-preview-banner strong {
+  color: #167c74;
+}
+
+.demo-preview-banner .btn {
+  margin-left: auto;
+  min-height: 34px;
+  padding: 7px 12px;
+}
+
+@media (max-width: 550px) {
+  .demo-preview-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .demo-preview-banner .btn {
+    margin-left: 0;
+  }
+}

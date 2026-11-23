@@ -1,0 +1,1 @@
+{"expo":{"name":"UniEvents Campus","slug":"ucems-campus","version":"0.2.0","orientation":"portrait","userInterfaceStyle":"light","android":{"package":"edu.example.ucems"},"ios":{"bundleIdentifier":"edu.example.ucems"},"plugins":[["expo-camera",{"cameraPermission":"Scan attendance QR codes for university events."}]],"extra":{}}}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#75777e", "secondary": "#006a65", "on-secondary-fixed": "#00201e", "tertiary": "#170c00", "on-error-container": "#93000a", "on-surface": "#111c2d", "secondary-fixed": "#96f3eb", "outline-variant": "#c4c6ce", "on-tertiary-fixed-variant": "#5a431e", "on-primary-fixed-variant": "#374760", "inverse-primary": "#b7c7e5", "on-background": "#111c2d", "surface-variant": "#d8e3fb", "surface-container": "#e7eeff", "secondary-container": "#93f0e8", "surface-dim": "#cfdaf2", "primary-container": "#13243b", "primary-fixed": "#d4e3ff", "inverse-on-surface": "#ecf1ff", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#291800", "surface": "#f9f9ff", "secondary-fixed-dim": "#79d6cf", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#00504c", "on-primary-fixed": "#0a1c33", "on-secondary": "#ffffff", "on-error": "#ffffff", "background": "#f9f9ff", "on-primary-container": "#7b8ca7", "on-primary": "#ffffff", "surface-tint": "#4f5f79", "primary-fixed-dim": "#b7c7e5", "surface-container-highest": "#d8e3fb", "tertiary-container": "#332001", "on-secondary-container": "#006f69", "surface-container-low": "#f0f3ff", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#e4c192", "on-tertiary-container": "#a4865c", "surface-container-high": "#dee8ff", "error-container": "#ffdad6", "tertiary-fixed": "#ffddb1", "inverse-surface": "#263143", "error": "#ba1a1a", "on-surface-variant": "#44474d", "primary": "#000e23" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.25rem", "margin-mobile": "1rem", "space-3xl": "3rem", "gutter-mobile": "1rem", "margin": "2rem", "space-sm": "0.75rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-2xl": "2.5rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "badge-label": [ "Inter" ], "headline-section": [ "Inter" ], "body-primary": [ "Inter" ], "headline-page": [ "Inter" ], "display-kpi": [ "Inter" ], "caption": [ "Inter" ], "table-header": [ "Inter" ], "display-kpi-compact": [ "Inter" ], "body-secondary": [ "Inter" ], "headline-page-mobile": [ "Inter" ], "headline-card": [ "Inter" ], "button-text": [ "Inter" ] }, "fontSize": { "badge-label": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "headline-section": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-primary": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-page": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-kpi": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "caption": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "table-header": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-kpi-compact": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-secondary": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-page-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-card": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "button-text": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container-low font-body-primary text-body-primary text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_2px_0_rgba(19,36,59,0.05)]"><div class="h-16 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="dashboard" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">school</span></div><div class="flex items-baseline gap-space-xs"><span class="font-headline-card text-headline-card text-on-surface font-bold tracking-tight">UniEvents</span><span class="font-badge-label text-badge-label bg-secondary-fixed text-on-secondary-fixed-variant px-space-xs py-space-2xs rounded">Student Portal</span></div></a><nav class="hidden xl:flex items-center gap-space-md h-16" data-active-classes="text-secondary border-b-2 border-secondary font-semibold"><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="explore-events" href="#">Explore Events</a><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="calendar" href="#">Calendar</a><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="my-events" href="#">My Events</a><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="clubs" href="#">Clubs</a><a class="text-on-surface-variant hover:text-on-surface font-button-text text-button-text h-full flex items-center px-space-xs transition-colors" data-path="my-achievements" href="#">My Achievements</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low border border-outline-variant/40 rounded-lg px-space-sm h-10 w-64"><span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">search</span><span class="font-body-secondary text-body-secondary text-outline">Search events, clubs...</span><div class="ml-auto flex items-center bg-surface-container-lowest px-1.5 py-0.5 rounded border border-outline-variant/30 text-caption font-caption text-outline">⌘K</div></div><a aria-label="Notifications" class="relative w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-error text-on-error font-badge-label text-[10px] leading-none flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">3</span></a><div class="h-8 w-px bg-outline-variant/40"></div><a class="flex items-center gap-space-sm pl-space-2xs cursor-pointer rounded-lg hover:bg-surface-container-low transition-colors py-1 px-1.5" data-path="profile-settings" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-button-text text-button-text text-on-surface leading-tight">Kaveen Rathnayake</span><span class="font-caption text-caption text-on-surface-variant leading-none">SE/2023/048</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] hidden lg:block">expand_more</span></a></div></div></header><main class="w-full pt-16 bg-surface-container-low min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Top Context Header Area -->
+<div class="w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-[1440px] mx-auto px-margin py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs text-secondary font-badge-label text-badge-label uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            INSTITUTIONAL IDENTITY &amp; SECURITY
+          </div>
+<h1 class="font-headline-page text-headline-page text-on-surface tracking-tight">
+            Student Profile &amp; Account Settings
+          </h1>
+<p class="font-body-secondary text-body-secondary text-on-surface-variant max-w-3xl">
+            Manage your academic credentials, biometric hardware pairing, notification preferences, and institutional authorizations under Council Bylaw 18-B governance.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded-xl shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-on-surface">SAML 2.0 Auth State</span>
+<span class="font-caption text-caption text-on-surface-variant">Federated via Lanka Education And Research Network</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid Framework (1440px target, 25% Left Nav / 75% Right Panel) -->
+<div class="max-w-[1440px] w-full mx-auto px-margin py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Navigation Column (25% -> 3 of 12 columns) -->
+<aside class="lg:col-span-3 space-y-space-md sticky top-24">
+<!-- Navigation Menu Card -->
+<nav class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm space-y-space-2xs">
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-button-text text-button-text transition-all shadow-sm" href="#academic-profile">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">badge</span>
+<span class="truncate">1. Verified Academic Profile</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-button-text text-button-text transition-colors" href="#hardware-binding">
+<span class="material-symbols-outlined text-[20px]">phonelink_lock</span>
+<span class="truncate">2. Hardware Binding</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-button-text text-button-text transition-colors" href="#notification-channels">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="truncate">3. Notification Preferences</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-button-text text-button-text transition-colors" href="#linked-societies">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+<span class="truncate">4. Society Affiliations</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-button-text text-button-text transition-colors" href="#privacy-charter">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span class="truncate">5. Privacy &amp; Data Charter</span>
+</a>
+</nav>
+<!-- Institutional Compliance Badge Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">gavel</span>
+<span class="font-headline-card text-headline-card">Regulatory Registry</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Identity credentials, cardholder records, and turnstile biometrics are synchronized in compliance with University ICT Statutes § 11.4.
+          </p>
+<div class="p-space-xs rounded bg-surface-container-low flex justify-between items-center text-caption font-caption text-on-surface-variant">
+<span>Audit Cycle:</span>
+<span class="font-medium text-on-surface">2026/Q1 ACTIVE</span>
+</div>
+</div>
+</aside>
+<!-- Right Content Panels (75% -> 9 of 12 columns) -->
+<section class="lg:col-span-9 space-y-space-xl">
+<!-- CARD 1: Verified University Academic Identity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm" id="academic-profile">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md mb-space-lg gap-space-sm">
+<div class="flex items-center gap-space-md">
+<!-- Visual Student Avatar -->
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-primary-container shadow-md flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a young South Asian university male student with a calm professional posture, crisp institutional daylight, clean college campus background with navy and teal architectural nuances, sharp focus, professional student card style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv8XCGSBPzOFO1PhBN2id6I_Ly06fRQ10ZXqJSa2q-1T5qipksoSnzO7mgms9Mw4FVtlQFfNjEqi6rosSDDLKMkdGFLvqcXtMzCf8KgVH9cXAPVl6VkKTNKcPXd2F7bcbLul5eK5E0sl0x_OB_ljokjfWvAUudBX9P4WX67FxvXCQGYXmC-Vyulj8WQtfty_4wHFSSIowPcEiCbKrMCWrj0WxVVfbyGDDjd_HABTIw"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-tl-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-secondary">check</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-section text-headline-section text-on-surface">Kaveen Rathnayake</h2>
+<span class="inline-flex items-center gap-1 font-badge-label text-badge-label px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[14px]">verified</span> SAML SSO Verified
+                  </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Primary Matriculated Entity • Faculty of Computing</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-caption font-caption text-on-surface-variant bg-surface-container-low px-space-sm py-space-xs rounded-lg self-start sm:self-auto">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span>SIS Source: Synced 12m ago</span>
+</div>
+</div>
+<!-- Section: Read-only SIS Metadata -->
+<div class="mb-space-lg">
+<div class="flex items-center gap-space-xs mb-space-sm text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+<span class="font-headline-card text-headline-card">University Registrar Records (Read-Only)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="space-y-space-2xs">
+<span class="font-caption text-caption text-outline uppercase tracking-wider block">Official Legal Name</span>
+<span class="font-body-primary text-body-primary font-semibold text-on-surface block">Kaveen Rathnayake</span>
+</div>
+<div class="space-y-space-2xs">
+<span class="font-caption text-caption text-outline uppercase tracking-wider block">Student Index / Registration No.</span>
+<span class="font-body-primary text-body-primary font-semibold text-on-surface font-mono block">SE/2023/048</span>
+</div>
+<div class="space-y-space-2xs">
+<span class="font-caption text-caption text-outline uppercase tracking-wider block">Institutional Email</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-body-primary text-body-primary text-on-surface font-mono">kaveen.r@stu.cmb.ac.lk</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-badge-label font-bold px-1.5 py-0.5 rounded">Verified Domain</span>
+</div>
+</div>
+<div class="space-y-space-2xs">
+<span class="font-caption text-caption text-outline uppercase tracking-wider block">Enrolled Academic Degree</span>
+<span class="font-body-primary text-body-primary text-on-surface block">B.Sc. (Hons) Software Engineering • Year 2 / Semester 4</span>
+</div>
+</div>
+<div class="mt-space-xs flex items-center gap-space-2xs text-caption font-caption text-outline">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span>Name, Index, and Academic degree changes require an endorsement slip through the Academic Affairs Division.</span>
+</div>
+</div>
+<!-- Section: Editable Permitted Preferences -->
+<form class="space-y-space-md" onsubmit="event.preventDefault(); document.getElementById('save-toast').classList.remove('hidden'); setTimeout(() =&gt; document.getElementById('save-toast').classList.add('hidden'), 3500);">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">edit_note</span>
+<span class="font-headline-card text-headline-card">Editable Student Contact &amp; Attendance Preferences</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Preferred Name -->
+<div class="space-y-space-2xs">
+<label class="font-button-text text-button-text text-on-surface block" for="pref-name">Preferred / Display Name</label>
+<div class="relative">
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-primary text-body-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="pref-name" type="text" value="Kaveen"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-outline text-[18px]">person</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Used on campus badges, certificate issuance, and society rolls.</span>
+</div>
+<!-- Mobile Contact -->
+<div class="space-y-space-2xs">
+<label class="font-button-text text-button-text text-on-surface block" for="contact-phone">Contact Mobile Number</label>
+<div class="relative">
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-primary text-body-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="contact-phone" type="tel" value="+94 77 348 9120"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-outline text-[18px]">call</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Validated for automated SMS gate authentication passes.</span>
+</div>
+<!-- Emergency Contact Details -->
+<div class="space-y-space-2xs">
+<label class="font-button-text text-button-text text-on-surface block" for="emg-name">Emergency Contact Name &amp; Relation</label>
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-primary text-body-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="emg-name" type="text" value="Dr. J. Rathnayake (Father)"/>
+<span class="font-caption text-caption text-on-surface-variant">Designated next of kin on university health record.</span>
+</div>
+<div class="space-y-space-2xs">
+<label class="font-button-text text-button-text text-on-surface block" for="emg-tel">Emergency Contact Telephone</label>
+<input class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-primary text-body-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="emg-tel" type="tel" value="+94 77 123 4567"/>
+<span class="font-caption text-caption text-on-surface-variant">Direct line for university chief security officer.</span>
+</div>
+<!-- Dietary Requirement -->
+<div class="space-y-space-2xs md:col-span-2">
+<label class="font-button-text text-button-text text-on-surface block" for="diet-req">Dietary Requirement (Conferences &amp; Academic Events)</label>
+<select class="w-full h-10 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-primary text-body-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="diet-req">
+<option selected="" value="veg">Vegetarian</option>
+<option value="vegan">Vegan</option>
+<option value="halal">Halal</option>
+<option value="standard">Standard / Non-Restricted</option>
+</select>
+<span class="font-caption text-caption text-on-surface-variant">Auto-populated when registering for dining-inclusive hackathons and symposiums.</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="hidden font-caption text-caption text-secondary font-semibold flex items-center gap-1" id="save-toast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Personal changes saved successfully
+              </span>
+<button class="ml-auto px-space-lg h-10 rounded-lg bg-primary-container text-on-primary font-button-text text-button-text hover:bg-primary transition-colors flex items-center gap-space-xs shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Personal Information</span>
+</button>
+</div>
+</form>
+</div>
+<!-- CARD 2: Registered Mobile Hardware Binding (Strict Governance) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md" id="hardware-binding">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-section text-headline-section text-on-surface">Registered Mobile Hardware Binding</h2>
+<span class="font-badge-label text-badge-label px-space-xs py-space-2xs rounded bg-surface-container text-primary font-bold">1 Active Device</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Physical hardware identifier for turnstiles, auditorium access, and contactless voting.</p>
+</div>
+<div class="flex items-center gap-space-xs bg-secondary-fixed text-on-secondary-fixed-variant px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span class="font-badge-label text-badge-label">FIDO2 Biometric Token</span>
+</div>
+</div>
+<!-- Policy Restriction Banner -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5 flex-shrink-0">shield</span>
+<div class="space-y-space-2xs text-body-secondary font-body-secondary">
+<span class="font-semibold block text-on-surface">Bylaw 18-B Strict Hardware Rule Enforcement</span>
+<p class="text-on-surface-variant leading-relaxed">
+                In accordance with Council Bylaw 18-B, turnstile passes are restricted to a single registered hardware device. Self-service device migration is disabled to prevent proxy attendance and credentials spoofing.
+              </p>
+</div>
+</div>
+<!-- Active Device Detail Sheet -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="md:col-span-2 space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]">smartphone</span>
+</div>
+<div>
+<h3 class="font-headline-card text-headline-card text-on-surface">Samsung Galaxy S23 (SM-S911B Global)</h3>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-secondary font-semibold">Turnstile Sync Active</span>
+<span class="font-caption text-caption text-outline">• Last Synced 02 Nov 2026, 09:14 AM</span>
+</div>
+</div>
+</div>
+<!-- Device Specs Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-body-secondary font-body-secondary">
+<div>
+<span class="font-caption text-caption text-outline uppercase block">Hardware Fingerprint ID</span>
+<span class="font-mono text-on-surface font-semibold text-caption">DEV-LK-8942-S23</span>
+</div>
+<div>
+<span class="font-caption text-caption text-outline uppercase block">Enrolled Date</span>
+<span class="text-on-surface text-caption">12 Aug 2026, 11:20 AM</span>
+</div>
+<div>
+<span class="font-caption text-caption text-outline uppercase block">Auth Provider</span>
+<span class="text-on-surface text-caption">Campus SSO • FIDO2 WebAuthn</span>
+</div>
+<div>
+<span class="font-caption text-caption text-outline uppercase block">Hardware Secure Enclave</span>
+<span class="text-secondary font-semibold text-caption">Knox Attested (Passed)</span>
+</div>
+</div>
+</div>
+<!-- Turnstile Live Indicator Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption font-semibold text-on-surface uppercase tracking-wider">Gate Beacon</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">nfc</span>
+</div>
+<div class="my-space-xs space-y-1">
+<div class="flex items-baseline gap-1">
+<span class="font-display-kpi text-display-kpi text-on-surface">100%</span>
+<span class="font-caption text-caption text-secondary font-bold">Compliant</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Validated for Gates A, C &amp; Computing Faculty Turnstiles.</p>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full w-full"></div>
+</div>
+</div>
+</div>
+<!-- Pending Transfer Workflow Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[20px]">pending_actions</span>
+<span class="font-headline-card text-headline-card text-on-surface">Active Administrative Transfer Request</span>
+</div>
+<span class="font-badge-label text-badge-label px-space-xs py-space-2xs rounded bg-tertiary-fixed text-on-tertiary-fixed-variant">
+                Pending Proctor Verification
+              </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div class="space-y-1">
+<span class="font-mono text-caption text-primary font-bold">Ticket #TR-9941</span>
+<p class="font-body-secondary text-body-secondary text-on-surface">
+                  Transfer Review by Central ICT &amp; Office of the University Proctor
+                </p>
+<span class="font-caption text-caption text-outline">Target Resolution Window: 24–48 Institutional Hours</span>
+</div>
+<button class="px-space-md h-9 rounded-lg bg-surface-container-lowest text-on-surface font-button-text text-button-text shadow-sm hover:bg-surface-container transition-colors self-start sm:self-auto" type="button">
+                View Protocol Notes
+              </button>
+</div>
+</div>
+<!-- Historic Bindings -->
+<div class="space-y-space-xs">
+<span class="font-caption text-caption text-outline uppercase tracking-wider block">Hardware Binding Audit Trail</span>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>Migration: <strong>Apple iPhone 12</strong> → <strong>Samsung Galaxy S23</strong></span>
+</div>
+<div class="text-right">
+<span class="text-on-surface font-medium">Approved by Dr. M. Perera (Senior Proctor)</span>
+<span class="text-outline block">18 Oct 2025</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Box -->
+<div class="pt-space-xs flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<p class="font-caption text-caption text-outline max-w-lg">
+              Lost or damaged device? Mandatory re-enrollment requires proctor approval and identity reaffirmation.
+            </p>
+<button class="px-space-md h-10 rounded-lg bg-surface-container-high text-primary font-button-text text-button-text hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-space-xs shadow-sm" onclick="alert('Administrative Ticket Workflow Initialized. ICT Helpdesk #4401 notified.');" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Request Device Transfer</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Notification Dispatch Channels -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md" id="notification-channels">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-section text-headline-section text-on-surface">Notification Dispatch Channels</h2>
+<p class="font-caption text-caption text-on-surface-variant">Configure communication delivery methods for academic and university operations.</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">notifications_active</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Row 1: Gate Pass & Admittance alerts -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">door_front</span>
+<span class="font-headline-card text-headline-card text-on-surface">Gate Pass &amp; Admittance Alerts</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Instant entry pings, turnstile denial alerts, and security curfew announcements.</p>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface">Mobile Push</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface">SMS Alert</span>
+</label>
+</div>
+</div>
+<!-- Row 2: Financial & Refund Disbursals -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span>
+<span class="font-headline-card text-headline-card text-on-surface">Financial &amp; Bursary Disbursals</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Voucher issuance, student stipend settlements, and society event ticket refunds (in LKR).</p>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface">Email (SIS)</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface">SMS Alert</span>
+</label>
+</div>
+</div>
+<!-- Row 3: Club Announcements & Deadlines -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">campaign</span>
+<span class="font-headline-card text-headline-card text-on-surface">Club Announcements &amp; Deadlines</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">General society calls, election nominations, and campus community bulletin updates.</p>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface">Email Weekly Digest</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0 cursor-pointer accent-secondary" type="checkbox"/>
+<span class="font-body-secondary text-body-secondary text-on-surface-variant">Mobile Push</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 4: Session & Account Security -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md" id="account-security">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-section text-headline-section text-on-surface">Active Session &amp; Identity Authentication</h2>
+<p class="font-caption text-caption text-on-surface-variant">Real-time Shibboleth authorization details and campus subnet security state.</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">encrypted</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Active Subnet Panel -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase text-outline">Network Address</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-bold px-1.5 py-0.5 rounded">Trusted Subnet</span>
+</div>
+<div class="font-display-kpi-compact text-display-kpi-compact font-mono text-on-surface">192.248.16.42</div>
+<p class="font-caption text-caption text-on-surface-variant">Colombo Campus University Subnet • Eduroam AP-CS-FL2</p>
+</div>
+<!-- SAML Session TTL -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase text-outline">SAML Token Lifespan</span>
+<span class="font-caption text-caption text-secondary font-semibold">Active</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-kpi-compact text-display-kpi-compact text-on-surface">7h 24m</span>
+<span class="font-caption text-caption text-outline">remaining (8h Initial TTL)</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Issued by: IdP-LEARN-CMB-AUTH-01 • SHA-256 Digest</p>
+</div>
+</div>
+<!-- Sign Out Action -->
+<div class="p-space-md rounded-xl bg-error-container flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<span class="font-headline-card text-headline-card text-on-error-container block">Revoke Active Single Sign-On Session</span>
+<p class="font-caption text-caption text-on-error-container max-w-lg">
+                Terminates the SAML session across all university services including Moodle, LMS, and Student Information Portals.
+              </p>
+</div>
+<button class="px-space-lg h-10 rounded-lg bg-error text-on-error font-button-text text-button-text hover:opacity-90 transition-opacity flex items-center justify-center gap-space-xs shadow-sm self-start sm:self-auto flex-shrink-0" onclick="confirm('Are you sure you want to sign out of the Campus Portal?')" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Sign Out of Campus Portal</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg"><div class="max-w-[1440px] mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-space-xs"><span class="font-semibold text-on-surface">UniEvents</span><span>© 2026 UniEvents Governance Directorate. All rights reserved.</span></div><div class="flex items-center gap-space-lg"><span>System Status: <span class="text-secondary font-semibold">Operational</span></span><span>Academic Cycle: 2025/2026</span><span>Support: affairs@uni.ac.lk</span></div></div></footer></body></html>

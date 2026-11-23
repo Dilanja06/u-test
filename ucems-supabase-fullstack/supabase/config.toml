@@ -1,0 +1,5 @@
+project_id = "ucems-local"
+[functions.create-checkout]
+verify_jwt = true
+[functions.stripe-webhook]
+verify_jwt = false # Stripe sends no Supabase JWT; validated by signed payload.

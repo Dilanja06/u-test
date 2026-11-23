@@ -1,0 +1,6 @@
+{
+  "name":"ucems-web", "version":"0.2.0", "private":true,"type":"module",
+  "scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0","check":"node --check src/client.js && node --check src/data.js && node --check src/demo-preview.dev.js"},
+  "dependencies":{"@supabase/supabase-js":"^2.59.0","qrcode":"^1.5.4","react":"^19.1.1","react-dom":"^19.1.1"},
+  "devDependencies":{"vite":"^7.1.0","@vitejs/plugin-react":"^5.0.2"}
+}
